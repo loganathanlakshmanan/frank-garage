@@ -1,0 +1,116 @@
+openapi: 3.0.1
+info:
+  title: API Warehouse service
+  description: 'API warehouse service'
+  version: 1.0.0
+tags:
+  - name: car-endpoint
+    description:  Cars Endpoint
+servers:
+  - url: https://frankshop.nl/frankgarage/warehouses
+  - url: http://frankshop.nl/frankgarage/warehouses
+paths:
+  /used-cars:
+    get:
+      tags:
+        - used-cars-endpoint
+      summary: Find all cars from all warehouses
+      operationId: getAll
+      parameters:
+        - name: year_model
+          in: query
+          description: filter collection based on model year
+          required: false
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UsedCar'
+        403:
+          description: Access forbidden
+          content: {}
+        404:
+          description: Pet not found
+          content: {}
+  /used-cars/{id}:
+    get:
+      tags:
+        - used-cars-endpoint
+      summary: Find car by ID
+      description: Returns a single car
+      operationId: getCarById
+      parameters:
+        - name: id
+          in: path
+          description: ID of car to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UsedCar'
+        400:
+          description: Invalid ID supplied
+          content: {}
+        403:
+          description: Access forbidden
+          content: {}
+        404:
+          description: Pet not found
+          content: {}
+components:
+  schemas:
+    UsedCar:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 1
+        manufacturer_name:
+          type: string
+          example: Volkswagen
+        model_name:
+          type: string
+          example: Jetta III
+        model_year:
+          type: integer
+          example: 1995
+        price:
+          type: number
+          format: decimal
+          example: 12947.52
+        licensed:
+          type: boolean
+          example: true
+        date_added:
+          type: string
+          format: date
+          example: 18-10-2020
+        warehouse_id:
+          type: string
+          example: 1
+      xml:
+        name: UsedCar
+    ApiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string
