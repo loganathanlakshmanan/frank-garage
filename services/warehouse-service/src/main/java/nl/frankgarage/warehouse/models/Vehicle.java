@@ -1,13 +1,16 @@
 package nl.frankgarage.warehouse.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Value;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-
-@Builder(toBuilder = true)
-@Value
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Vehicle implements Serializable {
     private int _id;
     private String make;

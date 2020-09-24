@@ -1,15 +1,17 @@
 package nl.frankgarage.warehouse.models;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Singular;
-import lombok.Value;
 
 import java.io.Serializable;
 import java.util.Collection;
-
-@Value
-@Builder(toBuilder = true)
-
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Car implements Serializable {
     private String location;
     @Singular

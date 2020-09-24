@@ -7,9 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
-
-@FeignClient(name = "warehouses", url = "${warehouse.service.url}")
 @Service
+@FeignClient(name = "warehouses", url = "${warehouse.service.url}")
 public interface WarehouseClient {
     @RequestMapping(method = RequestMethod.GET, value = "/", consumes = "application/json")
     List<Warehouse> getWarehouses();
