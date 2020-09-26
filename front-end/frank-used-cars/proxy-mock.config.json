@@ -1,0 +1,8 @@
+{
+  "/frank-garage/warehouses/used-cars": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "changeOrigin": true
+  }
+
+}

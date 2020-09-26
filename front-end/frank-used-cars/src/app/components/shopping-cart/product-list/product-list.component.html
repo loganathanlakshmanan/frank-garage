@@ -1,0 +1,5 @@
+<div class="row ">
+  <div *ngFor="let product of productList" class="col-md-4">
+    <app-product-item [addedToWishlist]="wishlist.indexOf(product.id) >= 0" [productItem]="product"></app-product-item>
+  </div>
+</div>
