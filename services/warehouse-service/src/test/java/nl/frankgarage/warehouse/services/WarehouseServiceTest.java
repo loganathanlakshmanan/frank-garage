@@ -1,12 +1,13 @@
 package nl.frankgarage.warehouse.services;
 
 import nl.frankgarage.warehouse.clients.WarehouseClient;
-import nl.frankgarage.warehouse.exceptions.UsedCarNotFoundException;
+import nl.frankgarage.warehouse.exceptions.WarehouseNotFoundException;
 import nl.frankgarage.warehouse.models.Car;
 import nl.frankgarage.warehouse.models.Location;
 import nl.frankgarage.warehouse.models.UsedCar;
 import nl.frankgarage.warehouse.models.Vehicle;
 import nl.frankgarage.warehouse.models.Warehouse;
+import nl.frankgarage.warehouse.models.WarehouseDetails;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,14 +21,13 @@ import java.util.Collection;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
 import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UserCarServiceTest {
+public class WarehouseServiceTest {
     List<Warehouse> warehouses = new ArrayList<>();
-    private UsedCarService usedCarService;
+    private WarehouseService warehouseService;
     @MockBean
     private WarehouseClient warehouseClient;
 
@@ -94,28 +94,37 @@ public class UserCarServiceTest {
                                 .build());
 
         when(warehouseClient.getWarehouses()).thenReturn(warehouses);
-        usedCarService = new UsedCarService(warehouseClient);
+        warehouseService = new WarehouseService(warehouseClient);
     }
 
     @Test
-    public void shouldReturnCarsFromAllWarehouses() {
-        Collection<UsedCar> usedCars = usedCarService.retrieveAllUsedCars();
-        assertEquals(4, usedCars.size());
+    public void shouldReturnAllWarehouses() {
+        Collection<WarehouseDetails> warehouseDetailsCollection = warehouseService.retrieveAllWarehouses();
+        assertEquals(2, warehouseDetailsCollection.size());
     }
 
     @Test
-    public void shouldReturnCarById() {
-        UsedCar usedCar = usedCarService.retrieveUsedCar("4");
-        assertEquals("4", usedCar.getId());
-        assertEquals("Nissan", usedCar.getManufacturerName());
-        assertEquals("Altima", usedCar.getModelName());
-        assertEquals(1994, usedCar.getModelYear());
-        assertFalse(usedCar.isLicensed());
-        assertEquals("2018-08-12", usedCar.getDateAdded());
+    public void shouldReturnWarehouseById() {
+        WarehouseDetails warehouseDetails = warehouseService.retrieveWarehouseById("2");
+        assertEquals(2, warehouseDetails.getId());
+        assertEquals("Warehouse B", warehouseDetails.getName());
     }
 
-    @Test(expected = UsedCarNotFoundException.class)
-    public void shouldThrowNotFoundExceptionWhenCarIdIsInvalid() {
-        usedCarService.retrieveUsedCar("5");
+    @Test
+    public void shouldReturnAllCarsForGivenWarehouseId() {
+        Collection<UsedCar> usedCarCollection = warehouseService.retrieveAllCarsFromWarhouseById("1");
+        assertEquals(2, usedCarCollection.size());
+    }
+
+    @Test
+    public void shouldReturnCarByIdForGivenWarehouseById() {
+        UsedCar usedCar = warehouseService.retrieveCarByIdFromWarhouseById("1", "1");
+        assertEquals("1", usedCar.getId());
+        assertEquals("Volkswagen", usedCar.getManufacturerName());
+    }
+
+    @Test(expected = WarehouseNotFoundException.class)
+    public void shouldThrowNotFoundExceptionWhenWarehouseIdIsInvalid() {
+        warehouseService.retrieveWarehouseById("5");
     }
 }

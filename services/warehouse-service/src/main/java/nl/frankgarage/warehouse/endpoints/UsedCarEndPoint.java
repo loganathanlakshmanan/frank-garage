@@ -16,19 +16,19 @@ import java.util.Optional;
 
 @Slf4j
 @RestController
-@RequestMapping(value = "/frank-garage/warehouses", produces = "application/json;charset=UTF-8")
+@RequestMapping(value = "/frank-garage/used-cars", produces = "application/json;charset=UTF-8")
 @RequiredArgsConstructor
 public class UsedCarEndPoint {
 
     private final UsedCarService usedCarService;
 
-    @GetMapping("/used-cars")
+    @GetMapping
     public Collection<UsedCar> getAllUsedCars(@RequestHeader(value = "user-token", required = false) String userToken) {
         checkUserToken(userToken);
         return usedCarService.retrieveAllUsedCars();
     }
 
-    @GetMapping("/used-cars/{id}")
+    @GetMapping("/{id}")
     public UsedCar getUsedCarById(@RequestHeader(value = "user-token", required = false) String userToken,
                                   @PathVariable String id)
     {

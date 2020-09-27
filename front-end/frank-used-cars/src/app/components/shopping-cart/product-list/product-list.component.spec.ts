@@ -1,6 +1,7 @@
-import {HttpClient, HttpHandler} from "@angular/common/http";
-import {CUSTOM_ELEMENTS_SCHEMA} from "@angular/core";
+import {HttpClientTestingModule} from "@angular/common/http/testing";
+import {CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA} from "@angular/core";
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import {RouterTestingModule} from "@angular/router/testing";
 import {DutchCurrencyPipe} from "../../../pipes/dutch-currency.pipe";
 
 import {ProductListComponent} from './product-list.component';
@@ -12,8 +13,8 @@ describe('ProductListComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ProductListComponent, DutchCurrencyPipe],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-      providers: [HttpClient, HttpHandler]
+      schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
+      imports: [RouterTestingModule, HttpClientTestingModule]
     })
            .compileComponents();
   }));

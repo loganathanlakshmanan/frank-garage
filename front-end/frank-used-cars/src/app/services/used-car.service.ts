@@ -9,7 +9,7 @@ import {Product} from 'src/app/models/product';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductService {
+export class UsedCarService {
 
   constructor(private http: HttpClient) {
   }
@@ -18,4 +18,7 @@ export class ProductService {
     return this.http.get<Product[]>(productsUrl);
   }
 
+  getProductByid(id: string): Observable<Product> {
+    return this.http.get<Product>(productsUrl + `/${id}`);
+  }
 }

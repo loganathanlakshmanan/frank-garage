@@ -1,805 +1,830 @@
 {
-  "used-cars" :
-[
-  {
-    "id": "1",
-    "price": 12947.52,
-    "licensed": true,
-    "manufacturer_name": "Volkswagen",
-    "model_name": "Jetta III",
-    "model_year": 1995,
-    "date_added": "2018-09-18",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "2",
-    "price": 20019.64,
-    "licensed": true,
-    "manufacturer_name": "Chevrolet",
-    "model_name": "Corvette",
-    "model_year": 2004,
-    "date_added": "2018-01-27",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "3",
-    "price": 27323.42,
-    "licensed": false,
-    "manufacturer_name": "Ford",
-    "model_name": "Expedition EL",
-    "model_year": 2008,
-    "date_added": "2018-07-03",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "4",
-    "price": 8541.62,
-    "licensed": true,
-    "manufacturer_name": "Infiniti",
-    "model_name": "FX",
-    "model_year": 2010,
-    "date_added": "2018-03-23",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "5",
-    "price": 14772.5,
-    "licensed": false,
-    "manufacturer_name": "GMC",
-    "model_name": "Safari",
-    "model_year": 1998,
-    "date_added": "2018-07-04",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "6",
-    "price": 6642.45,
-    "licensed": true,
-    "manufacturer_name": "Plymouth",
-    "model_name": "Colt Vista",
-    "model_year": 1994,
-    "date_added": "2018-07-11",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "7",
-    "price": 24925.75,
-    "licensed": false,
-    "manufacturer_name": "Cadillac",
-    "model_name": "Escalade ESV",
-    "model_year": 2008,
-    "date_added": "2018-01-29",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "8",
-    "price": 28619.45,
-    "licensed": false,
-    "manufacturer_name": "Mitsubishi",
-    "model_name": "Pajero",
-    "model_year": 2002,
-    "date_added": "2018-06-12",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "9",
-    "price": 6103.4,
-    "licensed": false,
-    "manufacturer_name": "Infiniti",
-    "model_name": "Q",
-    "model_year": 1995,
-    "date_added": "2017-11-13",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "10",
-    "price": 18992.7,
-    "licensed": false,
-    "manufacturer_name": "Ford",
-    "model_name": "Mustang",
-    "model_year": 1993,
-    "date_added": "2018-01-29",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "11",
-    "price": 23362.41,
-    "licensed": false,
-    "manufacturer_name": "Chevrolet",
-    "model_name": "G-Series 1500",
-    "model_year": 1997,
-    "date_added": "2018-07-30",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "12",
-    "price": 18371.53,
-    "licensed": false,
-    "manufacturer_name": "Cadillac",
-    "model_name": "DeVille",
-    "model_year": 1993,
-    "date_added": "2018-01-24",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "13",
-    "price": 23175.76,
-    "licensed": false,
-    "manufacturer_name": "Acura",
-    "model_name": "NSX",
-    "model_year": 2001,
-    "date_added": "2018-03-28",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "14",
-    "price": 26605.54,
-    "licensed": true,
-    "manufacturer_name": "Ford",
-    "model_name": "Econoline E250",
-    "model_year": 1994,
-    "date_added": "2018-05-13",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "15",
-    "price": 27395.26,
-    "licensed": false,
-    "manufacturer_name": "Lexus",
-    "model_name": "GX",
-    "model_year": 2005,
-    "date_added": "2017-11-12",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "16",
-    "price": 6244.51,
-    "licensed": true,
-    "manufacturer_name": "Dodge",
-    "model_name": "Ram Van 3500",
-    "model_year": 1999,
-    "date_added": "2018-09-28",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "17",
-    "price": 16145.27,
-    "licensed": false,
-    "manufacturer_name": "Dodge",
-    "model_name": "Caravan",
-    "model_year": 1995,
-    "date_added": "2017-11-25",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "18",
-    "price": 15103.84,
-    "licensed": true,
-    "manufacturer_name": "Dodge",
-    "model_name": "Dynasty",
-    "model_year": 1992,
-    "date_added": "2018-08-12",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "19",
-    "price": 9977.65,
-    "licensed": true,
-    "manufacturer_name": "Dodge",
-    "model_name": "Ram 1500",
-    "model_year": 2004,
-    "date_added": "2018-01-18",
-    "warehouse_id": "1"
-  },
-  {
-    "id": "20",
-    "price": 19957.71,
-    "licensed": false,
-    "manufacturer_name": "Maserati",
-    "model_name": "Coupe",
-    "model_year": 2005,
-    "date_added": "2017-11-14",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "21",
-    "price": 6303.99,
-    "licensed": false,
-    "manufacturer_name": "Isuzu",
-    "model_name": "Rodeo",
-    "model_year": 1998,
-    "date_added": "2017-12-03",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "22",
-    "price": 6910.16,
-    "licensed": false,
-    "manufacturer_name": "Infiniti",
-    "model_name": "I",
-    "model_year": 2002,
-    "date_added": "2017-10-15",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "23",
-    "price": 8252.66,
-    "licensed": false,
-    "manufacturer_name": "Nissan",
-    "model_name": "Altima",
-    "model_year": 1994,
-    "date_added": "2018-08-12",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "24",
-    "price": 23732.11,
-    "licensed": false,
-    "manufacturer_name": "Toyota",
-    "model_name": "Corolla",
-    "model_year": 2009,
-    "date_added": "2018-02-13",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "25",
-    "price": 8487.19,
-    "licensed": false,
-    "manufacturer_name": "Acura",
-    "model_name": "MDX",
-    "model_year": 2011,
-    "date_added": "2018-04-18",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "26",
-    "price": 29069.52,
-    "licensed": false,
-    "manufacturer_name": "BMW",
-    "model_name": "7 Series",
-    "model_year": 1998,
-    "date_added": "2017-10-29",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "27",
-    "price": 11187.68,
-    "licensed": false,
-    "manufacturer_name": "Nissan",
-    "model_name": "Maxima",
-    "model_year": 2004,
-    "date_added": "2018-07-16",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "28",
-    "price": 16047.9,
-    "licensed": false,
-    "manufacturer_name": "Audi",
-    "model_name": "A8",
-    "model_year": 1999,
-    "date_added": "2017-12-05",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "29",
-    "price": 25859.78,
-    "licensed": false,
-    "manufacturer_name": "Nissan",
-    "model_name": "Murano",
-    "model_year": 2005,
-    "date_added": "2018-06-06",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "30",
-    "price": 13232.13,
-    "licensed": true,
-    "manufacturer_name": "Acura",
-    "model_name": "RL",
-    "model_year": 2010,
-    "date_added": "2017-12-16",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "31",
-    "price": 15665.23,
-    "licensed": false,
-    "manufacturer_name": "Mitsubishi",
-    "model_name": "Chariot",
-    "model_year": 1987,
-    "date_added": "2018-02-21",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "32",
-    "price": 18129.37,
-    "licensed": true,
-    "manufacturer_name": "GMC",
-    "model_name": "3500 Club Coupe",
-    "model_year": 1992,
-    "date_added": "2018-09-23",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "33",
-    "price": 14479.37,
-    "licensed": false,
-    "manufacturer_name": "Dodge",
-    "model_name": "Dakota",
-    "model_year": 2009,
-    "date_added": "2017-12-12",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "34",
-    "price": 20614.72,
-    "licensed": false,
-    "manufacturer_name": "Mercury",
-    "model_name": "Grand Marquis",
-    "model_year": 1996,
-    "date_added": "2018-05-26",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "35",
-    "price": 27106.47,
-    "licensed": false,
-    "manufacturer_name": "Kia",
-    "model_name": "Sportage",
-    "model_year": 2001,
-    "date_added": "2018-03-14",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "36",
-    "price": 14835.48,
-    "licensed": false,
-    "manufacturer_name": "Chevrolet",
-    "model_name": "Blazer",
-    "model_year": 1994,
-    "date_added": "2017-11-10",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "37",
-    "price": 27717.28,
-    "licensed": false,
-    "manufacturer_name": "Mercedes-Benz",
-    "model_name": "SL-Class",
-    "model_year": 1994,
-    "date_added": "2018-08-17",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "38",
-    "price": 18569.86,
-    "licensed": true,
-    "manufacturer_name": "Honda",
-    "model_name": "Civic Si",
-    "model_year": 2003,
-    "date_added": "2018-09-12",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "39",
-    "price": 23494.78,
-    "licensed": true,
-    "manufacturer_name": "Mercedes-Benz",
-    "model_name": "CL-Class",
-    "model_year": 2002,
-    "date_added": "2018-05-24",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "40",
-    "price": 25469.49,
-    "licensed": false,
-    "manufacturer_name": "Volkswagen",
-    "model_name": "Jetta",
-    "model_year": 2006,
-    "date_added": "2018-04-23",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "41",
-    "price": 11600.74,
-    "licensed": true,
-    "manufacturer_name": "Pontiac",
-    "model_name": "Grand Prix",
-    "model_year": 1975,
-    "date_added": "2018-01-14",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "42",
-    "price": 22000.62,
-    "licensed": true,
-    "manufacturer_name": "Infiniti",
-    "model_name": "FX",
-    "model_year": 2012,
-    "date_added": "2018-06-09",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "43",
-    "price": 10260.79,
-    "licensed": true,
-    "manufacturer_name": "Jaguar",
-    "model_name": "XK",
-    "model_year": 2006,
-    "date_added": "2018-09-28",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "44",
-    "price": 13740.2,
-    "licensed": false,
-    "manufacturer_name": "Cadillac",
-    "model_name": "STS",
-    "model_year": 2007,
-    "date_added": "2018-02-25",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "45",
-    "price": 28489.1,
-    "licensed": false,
-    "manufacturer_name": "Pontiac",
-    "model_name": "Sunfire",
-    "model_year": 1997,
-    "date_added": "2017-12-05",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "46",
-    "price": 26750.38,
-    "licensed": true,
-    "manufacturer_name": "Cadillac",
-    "model_name": "SRX",
-    "model_year": 2004,
-    "date_added": "2018-08-07",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "47",
-    "price": 21770.59,
-    "licensed": false,
-    "manufacturer_name": "Land Rover",
-    "model_name": "Freelander",
-    "model_year": 2004,
-    "date_added": "2018-09-01",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "48",
-    "price": 28834.26,
-    "licensed": false,
-    "manufacturer_name": "Suzuki",
-    "model_name": "Forenza",
-    "model_year": 2005,
-    "date_added": "2018-05-09",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "49",
-    "price": 25975.68,
-    "licensed": false,
-    "manufacturer_name": "Saab",
-    "model_name": "9-7X",
-    "model_year": 2005,
-    "date_added": "2018-06-07",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "50",
-    "price": 28091.96,
-    "licensed": false,
-    "manufacturer_name": "Ford",
-    "model_name": "Fusion",
-    "model_year": 2012,
-    "date_added": "2018-07-15",
-    "warehouse_id": "2"
-  },
-  {
-    "id": "51",
-    "price": 7429.18,
-    "licensed": true,
-    "manufacturer_name": "Cadillac",
-    "model_name": "Escalade",
-    "model_year": 2005,
-    "date_added": "2018-09-26",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "52",
-    "price": 17066.31,
-    "licensed": true,
-    "manufacturer_name": "Porsche",
-    "model_name": "Cayenne",
-    "model_year": 2011,
-    "date_added": "2017-10-19",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "53",
-    "price": 14066.06,
-    "licensed": false,
-    "manufacturer_name": "Mercedes-Benz",
-    "model_name": "SL-Class",
-    "model_year": 2005,
-    "date_added": "2018-08-08",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "54",
-    "price": 22560.18,
-    "licensed": false,
-    "manufacturer_name": "Mitsubishi",
-    "model_name": "RVR",
-    "model_year": 1995,
-    "date_added": "2018-05-25",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "55",
-    "price": 25762.08,
-    "licensed": true,
-    "manufacturer_name": "Volvo",
-    "model_name": "850",
-    "model_year": 1995,
-    "date_added": "2017-10-03",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "56",
-    "price": 18840.96,
-    "licensed": true,
-    "manufacturer_name": "Honda",
-    "model_name": "del Sol",
-    "model_year": 1994,
-    "date_added": "2017-11-25",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "57",
-    "price": 28773.14,
-    "licensed": true,
-    "manufacturer_name": "Infiniti",
-    "model_name": "Q",
-    "model_year": 1996,
-    "date_added": "2018-08-09",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "58",
-    "price": 17141.08,
-    "licensed": true,
-    "manufacturer_name": "Mercedes-Benz",
-    "model_name": "500E",
-    "model_year": 1992,
-    "date_added": "2018-08-13",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "59",
-    "price": 18983.52,
-    "licensed": true,
-    "manufacturer_name": "GMC",
-    "model_name": "Envoy XL",
-    "model_year": 2002,
-    "date_added": "2018-03-14",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "60",
-    "price": 15611.22,
-    "licensed": true,
-    "manufacturer_name": "Volkswagen",
-    "model_name": "Touareg 2",
-    "model_year": 2008,
-    "date_added": "2018-02-22",
-    "warehouse_id": "3"
-  },
-  {
-    "id": "61",
-    "price": 8771.0,
-    "licensed": false,
-    "manufacturer_name": "Saab",
-    "model_name": "900",
-    "model_year": 1987,
-    "date_added": "2017-12-01",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "62",
-    "price": 23407.59,
-    "licensed": false,
-    "manufacturer_name": "Mazda",
-    "model_name": "B-Series",
-    "model_year": 1998,
-    "date_added": "2018-03-01",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "63",
-    "price": 5869.23,
-    "licensed": true,
-    "manufacturer_name": "GMC",
-    "model_name": "Sierra 3500",
-    "model_year": 2012,
-    "date_added": "2018-04-27",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "64",
-    "price": 16630.67,
-    "licensed": true,
-    "manufacturer_name": "Chevrolet",
-    "model_name": "Corvette",
-    "model_year": 1964,
-    "date_added": "2018-05-31",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "65",
-    "price": 11597.18,
-    "licensed": false,
-    "manufacturer_name": "Toyota",
-    "model_name": "Tacoma",
-    "model_year": 1997,
-    "date_added": "2018-03-30",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "66",
-    "price": 18248.21,
-    "licensed": false,
-    "manufacturer_name": "GMC",
-    "model_name": "Sonoma",
-    "model_year": 2004,
-    "date_added": "2018-03-09",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "67",
-    "price": 8051.64,
-    "licensed": false,
-    "manufacturer_name": "Bugatti",
-    "model_name": "Veyron",
-    "model_year": 2009,
-    "date_added": "2018-01-10",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "68",
-    "price": 14008.3,
-    "licensed": false,
-    "manufacturer_name": "Dodge",
-    "model_name": "Ram 1500 Club",
-    "model_year": 1996,
-    "date_added": "2018-05-01",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "69",
-    "price": 18620.19,
-    "licensed": false,
-    "manufacturer_name": "Land Rover",
-    "model_name": "Discovery Series II",
-    "model_year": 2001,
-    "date_added": "2018-03-03",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "70",
-    "price": 7316.93,
-    "licensed": true,
-    "manufacturer_name": "Volvo",
-    "model_name": "960",
-    "model_year": 1993,
-    "date_added": "2018-02-15",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "71",
-    "price": 29444.71,
-    "licensed": false,
-    "manufacturer_name": "Chrysler",
-    "model_name": "LHS",
-    "model_year": 2001,
-    "date_added": "2017-10-25",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "72",
-    "price": 7396.95,
-    "licensed": true,
-    "manufacturer_name": "Porsche",
-    "model_name": "944",
-    "model_year": 1984,
-    "date_added": "2017-10-26",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "73",
-    "price": 24491.8,
-    "licensed": false,
-    "manufacturer_name": "Subaru",
-    "model_name": "Legacy",
-    "model_year": 2010,
-    "date_added": "2017-12-26",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "74",
-    "price": 29009.65,
-    "licensed": true,
-    "manufacturer_name": "Volvo",
-    "model_name": "XC90",
-    "model_year": 2003,
-    "date_added": "2018-04-24",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "75",
-    "price": 10567.27,
-    "licensed": false,
-    "manufacturer_name": "Buick",
-    "model_name": "Skyhawk",
-    "model_year": 1985,
-    "date_added": "2018-03-21",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "76",
-    "price": 20997.71,
-    "licensed": true,
-    "manufacturer_name": "GMC",
-    "model_name": "Envoy XUV",
-    "model_year": 2004,
-    "date_added": "2018-03-27",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "77",
-    "price": 28614.95,
-    "licensed": false,
-    "manufacturer_name": "Volvo",
-    "model_name": "S60",
-    "model_year": 2009,
-    "date_added": "2018-07-25",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "78",
-    "price": 11221.14,
-    "licensed": false,
-    "manufacturer_name": "Pontiac",
-    "model_name": "Montana",
-    "model_year": 2000,
-    "date_added": "2018-01-04",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "79",
-    "price": 23194.01,
-    "licensed": false,
-    "manufacturer_name": "Lexus",
-    "model_name": "RX",
-    "model_year": 2002,
-    "date_added": "2018-05-02",
-    "warehouse_id": "4"
-  },
-  {
-    "id": "80",
-    "price": 17805.45,
-    "licensed": false,
-    "manufacturer_name": "Lexus",
-    "model_name": "RX",
-    "model_year": 2000,
-    "date_added": "2018-09-11",
-    "warehouse_id": "4"
-  }
-]
+  "used-cars": [
+    {
+      "id": "1",
+      "price": 12947.52,
+      "licensed": true,
+      "manufacturer_name": "Volkswagen",
+      "model_name": "Jetta III",
+      "model_year": 1995,
+      "date_added": "2018-09-18",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "2",
+      "price": 20019.64,
+      "licensed": true,
+      "manufacturer_name": "Chevrolet",
+      "model_name": "Corvette",
+      "model_year": 2004,
+      "date_added": "2018-01-27",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "3",
+      "price": 27323.42,
+      "licensed": false,
+      "manufacturer_name": "Ford",
+      "model_name": "Expedition EL",
+      "model_year": 2008,
+      "date_added": "2018-07-03",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "4",
+      "price": 8541.62,
+      "licensed": true,
+      "manufacturer_name": "Infiniti",
+      "model_name": "FX",
+      "model_year": 2010,
+      "date_added": "2018-03-23",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "5",
+      "price": 14772.5,
+      "licensed": false,
+      "manufacturer_name": "GMC",
+      "model_name": "Safari",
+      "model_year": 1998,
+      "date_added": "2018-07-04",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "6",
+      "price": 6642.45,
+      "licensed": true,
+      "manufacturer_name": "Plymouth",
+      "model_name": "Colt Vista",
+      "model_year": 1994,
+      "date_added": "2018-07-11",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "7",
+      "price": 24925.75,
+      "licensed": false,
+      "manufacturer_name": "Cadillac",
+      "model_name": "Escalade ESV",
+      "model_year": 2008,
+      "date_added": "2018-01-29",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "8",
+      "price": 28619.45,
+      "licensed": false,
+      "manufacturer_name": "Mitsubishi",
+      "model_name": "Pajero",
+      "model_year": 2002,
+      "date_added": "2018-06-12",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "9",
+      "price": 6103.4,
+      "licensed": false,
+      "manufacturer_name": "Infiniti",
+      "model_name": "Q",
+      "model_year": 1995,
+      "date_added": "2017-11-13",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "10",
+      "price": 18992.7,
+      "licensed": false,
+      "manufacturer_name": "Ford",
+      "model_name": "Mustang",
+      "model_year": 1993,
+      "date_added": "2018-01-29",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "11",
+      "price": 23362.41,
+      "licensed": false,
+      "manufacturer_name": "Chevrolet",
+      "model_name": "G-Series 1500",
+      "model_year": 1997,
+      "date_added": "2018-07-30",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "12",
+      "price": 18371.53,
+      "licensed": false,
+      "manufacturer_name": "Cadillac",
+      "model_name": "DeVille",
+      "model_year": 1993,
+      "date_added": "2018-01-24",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "13",
+      "price": 23175.76,
+      "licensed": false,
+      "manufacturer_name": "Acura",
+      "model_name": "NSX",
+      "model_year": 2001,
+      "date_added": "2018-03-28",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "14",
+      "price": 26605.54,
+      "licensed": true,
+      "manufacturer_name": "Ford",
+      "model_name": "Econoline E250",
+      "model_year": 1994,
+      "date_added": "2018-05-13",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "15",
+      "price": 27395.26,
+      "licensed": false,
+      "manufacturer_name": "Lexus",
+      "model_name": "GX",
+      "model_year": 2005,
+      "date_added": "2017-11-12",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "16",
+      "price": 6244.51,
+      "licensed": true,
+      "manufacturer_name": "Dodge",
+      "model_name": "Ram Van 3500",
+      "model_year": 1999,
+      "date_added": "2018-09-28",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "17",
+      "price": 16145.27,
+      "licensed": false,
+      "manufacturer_name": "Dodge",
+      "model_name": "Caravan",
+      "model_year": 1995,
+      "date_added": "2017-11-25",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "18",
+      "price": 15103.84,
+      "licensed": true,
+      "manufacturer_name": "Dodge",
+      "model_name": "Dynasty",
+      "model_year": 1992,
+      "date_added": "2018-08-12",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "19",
+      "price": 9977.65,
+      "licensed": true,
+      "manufacturer_name": "Dodge",
+      "model_name": "Ram 1500",
+      "model_year": 2004,
+      "date_added": "2018-01-18",
+      "warehouse_id": "1"
+    },
+    {
+      "id": "20",
+      "price": 19957.71,
+      "licensed": false,
+      "manufacturer_name": "Maserati",
+      "model_name": "Coupe",
+      "model_year": 2005,
+      "date_added": "2017-11-14",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "21",
+      "price": 6303.99,
+      "licensed": false,
+      "manufacturer_name": "Isuzu",
+      "model_name": "Rodeo",
+      "model_year": 1998,
+      "date_added": "2017-12-03",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "22",
+      "price": 6910.16,
+      "licensed": false,
+      "manufacturer_name": "Infiniti",
+      "model_name": "I",
+      "model_year": 2002,
+      "date_added": "2017-10-15",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "23",
+      "price": 8252.66,
+      "licensed": false,
+      "manufacturer_name": "Nissan",
+      "model_name": "Altima",
+      "model_year": 1994,
+      "date_added": "2018-08-12",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "24",
+      "price": 23732.11,
+      "licensed": false,
+      "manufacturer_name": "Toyota",
+      "model_name": "Corolla",
+      "model_year": 2009,
+      "date_added": "2018-02-13",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "25",
+      "price": 8487.19,
+      "licensed": false,
+      "manufacturer_name": "Acura",
+      "model_name": "MDX",
+      "model_year": 2011,
+      "date_added": "2018-04-18",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "26",
+      "price": 29069.52,
+      "licensed": false,
+      "manufacturer_name": "BMW",
+      "model_name": "7 Series",
+      "model_year": 1998,
+      "date_added": "2017-10-29",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "27",
+      "price": 11187.68,
+      "licensed": false,
+      "manufacturer_name": "Nissan",
+      "model_name": "Maxima",
+      "model_year": 2004,
+      "date_added": "2018-07-16",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "28",
+      "price": 16047.9,
+      "licensed": false,
+      "manufacturer_name": "Audi",
+      "model_name": "A8",
+      "model_year": 1999,
+      "date_added": "2017-12-05",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "29",
+      "price": 25859.78,
+      "licensed": false,
+      "manufacturer_name": "Nissan",
+      "model_name": "Murano",
+      "model_year": 2005,
+      "date_added": "2018-06-06",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "30",
+      "price": 13232.13,
+      "licensed": true,
+      "manufacturer_name": "Acura",
+      "model_name": "RL",
+      "model_year": 2010,
+      "date_added": "2017-12-16",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "31",
+      "price": 15665.23,
+      "licensed": false,
+      "manufacturer_name": "Mitsubishi",
+      "model_name": "Chariot",
+      "model_year": 1987,
+      "date_added": "2018-02-21",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "32",
+      "price": 18129.37,
+      "licensed": true,
+      "manufacturer_name": "GMC",
+      "model_name": "3500 Club Coupe",
+      "model_year": 1992,
+      "date_added": "2018-09-23",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "33",
+      "price": 14479.37,
+      "licensed": false,
+      "manufacturer_name": "Dodge",
+      "model_name": "Dakota",
+      "model_year": 2009,
+      "date_added": "2017-12-12",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "34",
+      "price": 20614.72,
+      "licensed": false,
+      "manufacturer_name": "Mercury",
+      "model_name": "Grand Marquis",
+      "model_year": 1996,
+      "date_added": "2018-05-26",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "35",
+      "price": 27106.47,
+      "licensed": false,
+      "manufacturer_name": "Kia",
+      "model_name": "Sportage",
+      "model_year": 2001,
+      "date_added": "2018-03-14",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "36",
+      "price": 14835.48,
+      "licensed": false,
+      "manufacturer_name": "Chevrolet",
+      "model_name": "Blazer",
+      "model_year": 1994,
+      "date_added": "2017-11-10",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "37",
+      "price": 27717.28,
+      "licensed": false,
+      "manufacturer_name": "Mercedes-Benz",
+      "model_name": "SL-Class",
+      "model_year": 1994,
+      "date_added": "2018-08-17",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "38",
+      "price": 18569.86,
+      "licensed": true,
+      "manufacturer_name": "Honda",
+      "model_name": "Civic Si",
+      "model_year": 2003,
+      "date_added": "2018-09-12",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "39",
+      "price": 23494.78,
+      "licensed": true,
+      "manufacturer_name": "Mercedes-Benz",
+      "model_name": "CL-Class",
+      "model_year": 2002,
+      "date_added": "2018-05-24",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "40",
+      "price": 25469.49,
+      "licensed": false,
+      "manufacturer_name": "Volkswagen",
+      "model_name": "Jetta",
+      "model_year": 2006,
+      "date_added": "2018-04-23",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "41",
+      "price": 11600.74,
+      "licensed": true,
+      "manufacturer_name": "Pontiac",
+      "model_name": "Grand Prix",
+      "model_year": 1975,
+      "date_added": "2018-01-14",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "42",
+      "price": 22000.62,
+      "licensed": true,
+      "manufacturer_name": "Infiniti",
+      "model_name": "FX",
+      "model_year": 2012,
+      "date_added": "2018-06-09",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "43",
+      "price": 10260.79,
+      "licensed": true,
+      "manufacturer_name": "Jaguar",
+      "model_name": "XK",
+      "model_year": 2006,
+      "date_added": "2018-09-28",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "44",
+      "price": 13740.2,
+      "licensed": false,
+      "manufacturer_name": "Cadillac",
+      "model_name": "STS",
+      "model_year": 2007,
+      "date_added": "2018-02-25",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "45",
+      "price": 28489.1,
+      "licensed": false,
+      "manufacturer_name": "Pontiac",
+      "model_name": "Sunfire",
+      "model_year": 1997,
+      "date_added": "2017-12-05",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "46",
+      "price": 26750.38,
+      "licensed": true,
+      "manufacturer_name": "Cadillac",
+      "model_name": "SRX",
+      "model_year": 2004,
+      "date_added": "2018-08-07",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "47",
+      "price": 21770.59,
+      "licensed": false,
+      "manufacturer_name": "Land Rover",
+      "model_name": "Freelander",
+      "model_year": 2004,
+      "date_added": "2018-09-01",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "48",
+      "price": 28834.26,
+      "licensed": false,
+      "manufacturer_name": "Suzuki",
+      "model_name": "Forenza",
+      "model_year": 2005,
+      "date_added": "2018-05-09",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "49",
+      "price": 25975.68,
+      "licensed": false,
+      "manufacturer_name": "Saab",
+      "model_name": "9-7X",
+      "model_year": 2005,
+      "date_added": "2018-06-07",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "50",
+      "price": 28091.96,
+      "licensed": false,
+      "manufacturer_name": "Ford",
+      "model_name": "Fusion",
+      "model_year": 2012,
+      "date_added": "2018-07-15",
+      "warehouse_id": "2"
+    },
+    {
+      "id": "51",
+      "price": 7429.18,
+      "licensed": true,
+      "manufacturer_name": "Cadillac",
+      "model_name": "Escalade",
+      "model_year": 2005,
+      "date_added": "2018-09-26",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "52",
+      "price": 17066.31,
+      "licensed": true,
+      "manufacturer_name": "Porsche",
+      "model_name": "Cayenne",
+      "model_year": 2011,
+      "date_added": "2017-10-19",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "53",
+      "price": 14066.06,
+      "licensed": false,
+      "manufacturer_name": "Mercedes-Benz",
+      "model_name": "SL-Class",
+      "model_year": 2005,
+      "date_added": "2018-08-08",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "54",
+      "price": 22560.18,
+      "licensed": false,
+      "manufacturer_name": "Mitsubishi",
+      "model_name": "RVR",
+      "model_year": 1995,
+      "date_added": "2018-05-25",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "55",
+      "price": 25762.08,
+      "licensed": true,
+      "manufacturer_name": "Volvo",
+      "model_name": "850",
+      "model_year": 1995,
+      "date_added": "2017-10-03",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "56",
+      "price": 18840.96,
+      "licensed": true,
+      "manufacturer_name": "Honda",
+      "model_name": "del Sol",
+      "model_year": 1994,
+      "date_added": "2017-11-25",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "57",
+      "price": 28773.14,
+      "licensed": true,
+      "manufacturer_name": "Infiniti",
+      "model_name": "Q",
+      "model_year": 1996,
+      "date_added": "2018-08-09",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "58",
+      "price": 17141.08,
+      "licensed": true,
+      "manufacturer_name": "Mercedes-Benz",
+      "model_name": "500E",
+      "model_year": 1992,
+      "date_added": "2018-08-13",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "59",
+      "price": 18983.52,
+      "licensed": true,
+      "manufacturer_name": "GMC",
+      "model_name": "Envoy XL",
+      "model_year": 2002,
+      "date_added": "2018-03-14",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "60",
+      "price": 15611.22,
+      "licensed": true,
+      "manufacturer_name": "Volkswagen",
+      "model_name": "Touareg 2",
+      "model_year": 2008,
+      "date_added": "2018-02-22",
+      "warehouse_id": "3"
+    },
+    {
+      "id": "61",
+      "price": 8771.0,
+      "licensed": false,
+      "manufacturer_name": "Saab",
+      "model_name": "900",
+      "model_year": 1987,
+      "date_added": "2017-12-01",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "62",
+      "price": 23407.59,
+      "licensed": false,
+      "manufacturer_name": "Mazda",
+      "model_name": "B-Series",
+      "model_year": 1998,
+      "date_added": "2018-03-01",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "63",
+      "price": 5869.23,
+      "licensed": true,
+      "manufacturer_name": "GMC",
+      "model_name": "Sierra 3500",
+      "model_year": 2012,
+      "date_added": "2018-04-27",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "64",
+      "price": 16630.67,
+      "licensed": true,
+      "manufacturer_name": "Chevrolet",
+      "model_name": "Corvette",
+      "model_year": 1964,
+      "date_added": "2018-05-31",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "65",
+      "price": 11597.18,
+      "licensed": false,
+      "manufacturer_name": "Toyota",
+      "model_name": "Tacoma",
+      "model_year": 1997,
+      "date_added": "2018-03-30",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "66",
+      "price": 18248.21,
+      "licensed": false,
+      "manufacturer_name": "GMC",
+      "model_name": "Sonoma",
+      "model_year": 2004,
+      "date_added": "2018-03-09",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "67",
+      "price": 8051.64,
+      "licensed": false,
+      "manufacturer_name": "Bugatti",
+      "model_name": "Veyron",
+      "model_year": 2009,
+      "date_added": "2018-01-10",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "68",
+      "price": 14008.3,
+      "licensed": false,
+      "manufacturer_name": "Dodge",
+      "model_name": "Ram 1500 Club",
+      "model_year": 1996,
+      "date_added": "2018-05-01",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "69",
+      "price": 18620.19,
+      "licensed": false,
+      "manufacturer_name": "Land Rover",
+      "model_name": "Discovery Series II",
+      "model_year": 2001,
+      "date_added": "2018-03-03",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "70",
+      "price": 7316.93,
+      "licensed": true,
+      "manufacturer_name": "Volvo",
+      "model_name": "960",
+      "model_year": 1993,
+      "date_added": "2018-02-15",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "71",
+      "price": 29444.71,
+      "licensed": false,
+      "manufacturer_name": "Chrysler",
+      "model_name": "LHS",
+      "model_year": 2001,
+      "date_added": "2017-10-25",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "72",
+      "price": 7396.95,
+      "licensed": true,
+      "manufacturer_name": "Porsche",
+      "model_name": "944",
+      "model_year": 1984,
+      "date_added": "2017-10-26",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "73",
+      "price": 24491.8,
+      "licensed": false,
+      "manufacturer_name": "Subaru",
+      "model_name": "Legacy",
+      "model_year": 2010,
+      "date_added": "2017-12-26",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "74",
+      "price": 29009.65,
+      "licensed": true,
+      "manufacturer_name": "Volvo",
+      "model_name": "XC90",
+      "model_year": 2003,
+      "date_added": "2018-04-24",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "75",
+      "price": 10567.27,
+      "licensed": false,
+      "manufacturer_name": "Buick",
+      "model_name": "Skyhawk",
+      "model_year": 1985,
+      "date_added": "2018-03-21",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "76",
+      "price": 20997.71,
+      "licensed": true,
+      "manufacturer_name": "GMC",
+      "model_name": "Envoy XUV",
+      "model_year": 2004,
+      "date_added": "2018-03-27",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "77",
+      "price": 28614.95,
+      "licensed": false,
+      "manufacturer_name": "Volvo",
+      "model_name": "S60",
+      "model_year": 2009,
+      "date_added": "2018-07-25",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "78",
+      "price": 11221.14,
+      "licensed": false,
+      "manufacturer_name": "Pontiac",
+      "model_name": "Montana",
+      "model_year": 2000,
+      "date_added": "2018-01-04",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "79",
+      "price": 23194.01,
+      "licensed": false,
+      "manufacturer_name": "Lexus",
+      "model_name": "RX",
+      "model_year": 2002,
+      "date_added": "2018-05-02",
+      "warehouse_id": "4"
+    },
+    {
+      "id": "80",
+      "price": 17805.45,
+      "licensed": false,
+      "manufacturer_name": "Lexus",
+      "model_name": "RX",
+      "model_year": 2000,
+      "date_added": "2018-09-11",
+      "warehouse_id": "4"
+    }
+  ],
+  "warehouses": [
+    {
+      "id": 1,
+      "name": "Warehouse A",
+      "latitude": 47.13111,
+      "longitude": -61.54801
+    },
+    {
+      "id": 2,
+      "name": "Warehouse B",
+      "latitude": 15.95386,
+      "longitude": 7.06246
+    },
+    {
+      "id": 3,
+      "name": "Warehouse C",
+      "latitude": 39.12788,
+      "longitude": -2.71398
+    },
+    {
+      "id": 4,
+      "name": "Warehouse D",
+      "latitude": -70.84354,
+      "longitude": 132.22345
+    }
+  ]
 }

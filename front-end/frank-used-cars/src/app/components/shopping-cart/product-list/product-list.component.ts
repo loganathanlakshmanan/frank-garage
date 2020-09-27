@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from 'src/app/models/product';
 
-import {ProductService} from 'src/app/services/product.service';
+import {UsedCarService} from 'src/app/services/used-car.service';
 
 @Component({
   selector: 'app-product-list',
@@ -14,18 +14,17 @@ export class ProductListComponent implements OnInit {
   wishlist: number[] = [];
 
   constructor(
-    private productService: ProductService
+    private usedCarService: UsedCarService
   )
   {
   }
 
   ngOnInit() {
     this.loadProducts();
-    //this.loadWishlist();
   }
 
   loadProducts() {
-    this.productService.getProducts().subscribe((products) => {
+    this.usedCarService.getProducts().subscribe((products) => {
       this.productList = products;
       this.sortData();
     });

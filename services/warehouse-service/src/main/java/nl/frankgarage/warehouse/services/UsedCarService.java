@@ -2,7 +2,7 @@ package nl.frankgarage.warehouse.services;
 
 import lombok.RequiredArgsConstructor;
 import nl.frankgarage.warehouse.clients.WarehouseClient;
-import nl.frankgarage.warehouse.exceptions.VehicleNotFoundException;
+import nl.frankgarage.warehouse.exceptions.UsedCarNotFoundException;
 import nl.frankgarage.warehouse.models.UsedCar;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +31,8 @@ public class UsedCarService {
                                                                                     .dateAdded(vehicle.getDateAdded())
                                                                                     .warehouseId(String.valueOf(
                                                                                             warehouse.get_id()))
+                                                                                    .locationName(warehouse.getCar()
+                                                                                                           .getLocation())
                                                                                     .build()))
                               .collect(Collectors.toList());
 
@@ -55,9 +57,11 @@ public class UsedCarService {
                                                                                     .dateAdded(vehicle.getDateAdded())
                                                                                     .warehouseId(String.valueOf(
                                                                                             warehouse.get_id()))
+                                                                                    .locationName(warehouse.getCar()
+                                                                                                           .getLocation())
                                                                                     .build()))
                               .findFirst()
-                              .orElseThrow(() -> new VehicleNotFoundException("vehicle not available"));
+                              .orElseThrow(() -> new UsedCarNotFoundException("vehicle not available"));
 
     }
 }

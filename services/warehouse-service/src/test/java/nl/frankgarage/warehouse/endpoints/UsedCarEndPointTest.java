@@ -75,7 +75,7 @@ public class UsedCarEndPointTest {
 
     @Test
     public void getAllUsedCars() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/frank-garage/warehouses/used-cars")
+        mockMvc.perform(MockMvcRequestBuilders.get("/frank-garage/used-cars")
                                               .header("user-token", "abc")
                                               .accept(MediaType.APPLICATION_JSON))
                .andExpect(MockMvcResultMatchers.status().isOk())
@@ -89,7 +89,7 @@ public class UsedCarEndPointTest {
 
     @Test
     public void getUsedCarById() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/frank-garage/warehouses/used-cars/1")
+        mockMvc.perform(MockMvcRequestBuilders.get("/frank-garage/used-cars/1")
                                               .header("user-token", "abc")
                                               .accept(MediaType.APPLICATION_JSON))
                .andExpect(MockMvcResultMatchers.status().isOk())

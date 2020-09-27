@@ -1,0 +1,6 @@
+{
+  "/frank-garage/used-cars": "/used-cars",
+  "/frank-garage/used-cars/:id": "/used-cars/:id",
+  "/frank-garage/warehouses": "/warehouses",
+  "/frank-garage/warehouses/:id": "/warehouses/:id"
+}

@@ -2,7 +2,8 @@ package nl.frankgarage.warehouse.endpoints;
 
 import nl.frankgarage.warehouse.exceptions.ExceptionResponse;
 import nl.frankgarage.warehouse.exceptions.UserHeaderNotFoundException;
-import nl.frankgarage.warehouse.exceptions.VehicleNotFoundException;
+import nl.frankgarage.warehouse.exceptions.UsedCarNotFoundException;
+import nl.frankgarage.warehouse.exceptions.WarehouseNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -15,10 +16,20 @@ import java.time.LocalDateTime;
 public class UsedCarExceptionHandler {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    @ExceptionHandler(VehicleNotFoundException.class)
-    public ResponseEntity<ExceptionResponse> handleNotFoundException(VehicleNotFoundException vehicleNotFoundException) {
+    @ExceptionHandler(UsedCarNotFoundException.class)
+    public ResponseEntity<ExceptionResponse> handleNotFoundException(UsedCarNotFoundException usedCarNotFoundException) {
         return new ResponseEntity<>(ExceptionResponse.builder()
-                                                     .message(vehicleNotFoundException.getMessage())
+                                                     .message(usedCarNotFoundException.getMessage())
+                                                     .status(HttpStatus.NOT_FOUND.getReasonPhrase())
+                                                     .timestamp(LocalDateTime.now())
+                                                     .build(), HttpStatus.NOT_FOUND);
+    }
+
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ExceptionHandler(WarehouseNotFoundException.class)
+    public ResponseEntity<ExceptionResponse> handleNotFoundException(WarehouseNotFoundException warehouseNotFoundException) {
+        return new ResponseEntity<>(ExceptionResponse.builder()
+                                                     .message(warehouseNotFoundException.getMessage())
                                                      .status(HttpStatus.NOT_FOUND.getReasonPhrase())
                                                      .timestamp(LocalDateTime.now())
                                                      .build(), HttpStatus.NOT_FOUND);

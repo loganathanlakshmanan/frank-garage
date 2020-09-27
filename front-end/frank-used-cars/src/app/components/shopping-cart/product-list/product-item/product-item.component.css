@@ -1,0 +1,11 @@
+.car-image {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.certificate-image {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}

@@ -21,7 +21,7 @@ describe('AppComponent', () => {
   it(`should have as title 'shopping-cart'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('shopping-cart');
+    expect(app.title).toEqual('Franks Used Cars');
   });
 
   it('should render title', () => {

@@ -4,12 +4,148 @@ info:
   description: 'API warehouse service'
   version: 1.0.0
 tags:
-  - name: car-endpoint
-    description:  Cars Endpoint
-servers:
-  - url: https://frankshop.nl/frankgarage/warehouses
-  - url: http://frankshop.nl/frankgarage/warehouses
+  - name: used-cars-endpoint
+    description:  Used Cars Endpoint
+  - name: warehouse-endpoint
+    description:  Warehouse Endpoint
 paths:
+  /warehouses:
+    get:
+      tags:
+        - warehouse-endpoint
+      summary: Find all  warehouses
+      operationId: getAllWarehouses
+      parameters:
+        - name: user-token
+          in: header
+          description: token to validate authorisation
+          required: false
+          schema:
+            type: string
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Warehouse'
+        403:
+          description: Access forbidden
+          content: {}
+        404:
+          description: Warehouse not found
+          content: {}
+  /warehouses/{id}:
+    get:
+      tags:
+        - warehouse-endpoint
+      summary: Find warehouse by ID
+      description: Returns a single warehouse
+      operationId: getWarehouseById
+      parameters:
+        - name: id
+          in: path
+          description: ID of warehouse to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Warehouse'
+        400:
+          description: Invalid ID supplied
+          content: {}
+        403:
+          description: Access forbidden
+          content: {}
+        404:
+          description: warehouse not found
+          content: {}
+  /warehouses/{id}/used-cars:
+    get:
+      tags:
+        - warehouse-endpoint
+      summary: Find all cars from given warehouse
+      operationId: getAllCarsFromWarehouseById
+      parameters:
+        - name: user-token
+          in: header
+          description: token to validate authorisation
+          required: false
+          schema:
+            type: string
+        - name: id
+          in: path
+          description: warehouse id
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UsedCar'
+        403:
+          description: Access forbidden
+          content: {}
+        404:
+          description: Warehouse not found
+          content: {}
+  /warehouses/{id}/used-cars/{carId}:
+    get:
+      tags:
+        - warehouse-endpoint
+      summary: Find car by ID for given warehouserid
+      description: Returns a car for given warehouse id
+      operationId: getCarByIdFromWarehouseById
+      parameters:
+        - name: id
+          in: path
+          description: ID of warehouse to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: carId
+          in: path
+          description: car Id
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: user-token
+          in: header
+          description: token to validate authorisation
+          required: false
+          schema:
+            type: string
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UsedCar'
+        400:
+          description: Invalid ID supplied
+          content: {}
+        403:
+          description: Access forbidden
+          content: {}
+        404:
+          description: warehouse not found
+          content: {}
   /used-cars:
     get:
       tags:
@@ -104,6 +240,25 @@ components:
           example: 1
       xml:
         name: UsedCar
+    Warehouse:
+      type: object
+      properties:
+        id:
+          type: string
+          example: 1
+        name:
+          type: string
+          example: Warehouse A
+        latitude:
+          type: string
+          format: decimal
+          example: 47.1233
+        longitude:
+          type: integer
+          format: decimal
+          example: 23.2323
+      xml:
+        name: Warehouse
     ApiResponse:
       type: object
       properties:
