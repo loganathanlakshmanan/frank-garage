@@ -25,9 +25,9 @@
                     <h5 class="card-title">Warehouse Location</h5>
                   </div>
                   <div class="col-6 text-right">
-<!--                    <button type="button" class="btn btn-primary btn-sm align-content-end" data-toggle="modal"-->
-<!--                            data-target="#exampleModalCenter">BUY-->
-<!--                    </button>-->
+                    <button type="button" class="btn btn-primary btn-sm align-content-end" data-toggle="modal"
+                            data-target="#exampleModalCenter">BUY
+                    </button>
                   </div>
                 </div>
                 <p>Warehouse Name: {{warehouseItem.name}}</p>
@@ -47,6 +47,27 @@
     </agm-map>
   </div>
 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="2" role="dialog" aria-labelledby="exampleModalLongTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title align-content-center" id="exampleModalLongTitle"></h5>
+        <div class="modal-body">
+          <p>Your order {{productItem.model_name}}
+            car has been added to your shopping cart. In the next step, we will reserve the car 15 minutes for you!</p>
+          <p>Total Price of the car is <strong> {{productItem.price | dutchCurrency}}</strong></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">BACK TO THE SHOP</button>
+        <button type="button" class="btn btn-primary">ORDER ONLINE</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
