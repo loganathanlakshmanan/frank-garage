@@ -1,5 +1,5 @@
-<div class="row ">
-  <div *ngFor="let product of productList" class="col-md-4">
+<div class="row " *ngIf="IsLoading" >
+  <div  *ngFor="let product of productList" class="col-md-4">
     <ng-template [ngIfElse]="elseblock" [ngIf]="product.licensed">
       <app-product-item [productItem]="product" [queryParams]="{id: product.id,warehouseId: product.warehouse_id}"
                         [routerLink]="['/checkout']"></app-product-item>

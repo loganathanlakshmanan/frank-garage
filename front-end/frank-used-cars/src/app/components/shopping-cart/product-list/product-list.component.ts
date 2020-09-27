@@ -12,6 +12,7 @@ export class ProductListComponent implements OnInit {
 
   productList: Product[] = [];
   wishlist: number[] = [];
+  private IsLoading: boolean;
 
   constructor(
     private usedCarService: UsedCarService
@@ -27,6 +28,7 @@ export class ProductListComponent implements OnInit {
     this.usedCarService.getProducts().subscribe((products) => {
       this.productList = products;
       this.sortData();
+      this.IsLoading = true;
     });
   }
 

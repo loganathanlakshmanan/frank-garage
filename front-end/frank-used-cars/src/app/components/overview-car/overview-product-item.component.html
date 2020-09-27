@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-md-8">
+    <div class="carousel " data-ride="carousel" id="carouselExampleControls">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container   w-100">
+            <img alt="..." src="assets/car-large.jpg">
+            <a class="btn btn-primary btn-sm" href="/shop">
+              GO BACK
+            </a>
+          </div>
+          <div *ngIf="IsLoaded" class="card-body w-100">
+            <div class="row">
+              <div class="col-6">
+                <h5 class="card-title">Car Overview</h5>
+                <p>Make: {{productItem.manufacturer_name}}</p>
+                <p>Model: {{productItem.model_name}}</p>
+                <p>Year: {{productItem.model_year}}</p>
+                <p>Available From : {{productItem.date_added | date:'mediumDate'}}</p>
+                <p>Price: {{productItem.price | dutchCurrency}}</p>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <div class="col-6">
+                    <h5 class="card-title">Warehouse Location</h5>
+                  </div>
+                  <div class="col-6 text-right">
+<!--                    <button type="button" class="btn btn-primary btn-sm align-content-end" data-toggle="modal"-->
+<!--                            data-target="#exampleModalCenter">BUY-->
+<!--                    </button>-->
+                  </div>
+                </div>
+                <p>Warehouse Name: {{warehouseItem.name}}</p>
+                <p> Latitude: {{warehouseItem.latitude}} </p>
+                <p> Longitude: {{warehouseItem.longitude}}</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="IsLoaded" class="col-md-4">
+    <agm-map [latitude]="warehouseItem.latitude" [longitude]="warehouseItem.longitude">
+      <agm-marker [latitude]="warehouseItem.latitude" [longitude]="warehouseItem.longitude"></agm-marker>
+    </agm-map>
+  </div>
+
+</div>
+
+
